@@ -8,17 +8,11 @@
 int main(void)
 
 {
-	char cType;
-	int  iType;
-	long int iLong;
-	long long int iLL;
-	float f;
-
-	printf("size of a char: %lu byte(s)\n", (unsigned long)sizeof(cType));
-	printf("size of an int: %lu byte(s)\n", (unsigned long)sizeof(iType));
-	printf("size of long int: %lu byte(s)\n", (unsigned long)sizeof(iLong));
-	printf("size of long long int: %lu byte(s)\n", (unsigned long)sizeof(iLL));
-	printf("size of float: %lu byte(s)\n", (unsigned long)sizeof(f));
+	printf("size of a char: %i byte(s)\n", sizeof(char));
+	printf("size of an int: %i byte(s)\n", sizeof(int);
+	printf("size of long int: %i byte(s)\n", sizeof(long int));
+	printf("size of long long int: %i byte(s)\n", sizeof(long long int));
+	printf("size of float: %i byte(s)\n", sizeof(float));
 
 Return(0);
 }
