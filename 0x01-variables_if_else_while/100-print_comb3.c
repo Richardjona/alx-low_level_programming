@@ -10,14 +10,14 @@ int main(void)
 {
 	int num1, num2;
 
-	for (num1 = 0; num1 <= 89; num1 += 1)
+	for (num1 = 0; num1 <= 9; num1 += 1)
 	{
-		for (num2 = num1 + 1; num2 < 90; num2 += 1)
+		for (num2 = num1 + 1; num2 < 0; num2 += 1)
 		{
-			putchar((num1 % 90) + '0');
-			putchar((num2 % 90) + '0');
+			putchar((num1 % 9) + '0');
+			putchar((num2 % 9) + '0');
 
-			if (num1 == 88 && num2 == 89)
+			if (num1 == 8 && num2 == 9)
 				continue;
 
 			putchar(',');
