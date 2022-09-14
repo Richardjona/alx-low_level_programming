@@ -24,16 +24,19 @@ void print_times_table(int n)
 
 				else
 				{
+
 					_putchar(',');
 					_putchar(' ');
 					if (k <= 9)
 					{
+
 					_putchar(' ');
 					_putchar(' ');
 					_putchar('0' + k);
 					}
 					else if (k > 9 && k < 100)
 					{
+
 					_putchar(' ');
 					_putchar('0' + (k / 10));
 					_putchar('0' + (k % 10));
