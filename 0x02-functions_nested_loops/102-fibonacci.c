@@ -19,7 +19,7 @@ int main(void)
 		a += b;
 		b += a;
 	}
-	if (count % 2 == 1)
+	if (fifty % 2 == 1)
 		printf("%li", a);
 	printf("\n");
 
