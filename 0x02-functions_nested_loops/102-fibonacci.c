@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - prints first 50 fibonacci numbers
@@ -8,20 +9,24 @@
 int main(void)
 
 {
-	int counter;
-	int countto = 50;
-	long a = 1;
-	long b = 2;
+	long n = 0;
+	long t1 = 1;
+	long t2 = 2;
+	long term = t1 + t2;
 
-	for (counter = 1; counter <= (countto / 2); counter++)
+	printf("%ld, %ld, ", t1, t2);
+
+	for (n = 0; n <= 47; n++)
 	{
-		printf("%li %li ", a, b);
-		a += b;
-		b += a;
+		printf("%ld", term);
+		if (n < 47)
+		{
+		printf(", ");
+		}
+		t1 = t2;
+		t2 = term;
+		term = t1 + t2;
 	}
-	if (countto % 2 == 1)
-		printf("%li", a);
 	printf("\n");
-
 	return (0);
 }
