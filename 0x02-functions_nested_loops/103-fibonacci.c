@@ -12,7 +12,6 @@ int main(void)
 	int a;
 	int b;
 	int sum = 1;
-	
 	a = 1;
 	b = 1;
 
@@ -24,5 +23,5 @@ int main(void)
 		sum_of_events += sum;
 	}
 	printf("%d\n", sum_of_events);
-	return (0)
+	return (0);
 }
