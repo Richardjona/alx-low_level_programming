@@ -20,7 +20,7 @@ int main(void)
 		}
 		else if ((num % 3) == 0)
 		{
-			printf("Fizz ");		
+			printf("Fizz ");
 		}
 		else if ((num % 5) == 0)
 		{
@@ -32,12 +32,12 @@ int main(void)
 			{
 				printf("%d", n);
 			}
-			if (n < 100)
+			if (num < 100)
 			{
 				printf(" ");
 			}
 		}
-		printf('\n');
+		printf("\n");
 		return (0);
 	}
 }
