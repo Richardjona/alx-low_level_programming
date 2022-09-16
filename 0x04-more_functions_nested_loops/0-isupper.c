@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * int _isupper - a function that prints
+ *_isupper - a function that prints
  * upper characters
  * @c: the character
  *
@@ -9,7 +9,7 @@
  */
 int _isupper(int)
 {
-	if ( c = 'A')
+	if (c >= 'A' && c <= 'Z')
 	{
 		return (1);
 	}
