@@ -6,20 +6,21 @@
  * @s: the string
  */
 
-void print_rev(char *s);
+void print_rev(char *s)
 {
-	int strn = 0;
-	int i;
+	char n;
+	int i = 0;
 
-	while (*s != '\0')
+	while (n != '\0')
 	{
-		strn++
-		++s;
+		n = s[i];
+		i++;
 	}
-	for (i = strn; i > 0; i--)
+	i--;
+	while (i >= 1)
 	{
-		_putchar(*s);
-		s--;
+		i--;
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }
