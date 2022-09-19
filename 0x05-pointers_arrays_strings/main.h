@@ -4,7 +4,9 @@
 
 /* this is a putchar function*/
 int _putchar(char c);
-/*function that updates the values it ponts*/
+/**
+ * reset_to_98 - takes a pointer to an int
+ */
 void reset_to_98(int *n);
 /*function that swaps the value of two pointers*/
 void swap_int(int *a, int *b);
