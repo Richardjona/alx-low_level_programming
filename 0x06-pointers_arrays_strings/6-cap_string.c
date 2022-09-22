@@ -2,8 +2,46 @@
 
 /**
  * cap_string - function that capitalizes
- * @string: the string
+ * @s: dest
  * Return: string
  */
 
-char
+char *cap_string(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] == s[0] && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		if (s[i - 1] == ' ' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == ',' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == ';' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '.' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '!' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '?' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '\"' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '(' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == ')' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '{' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '}' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '\n' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else if (s[i - 1] == '\t' && s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
+		else
+		continue;
+	}
+	return (s);
+}
